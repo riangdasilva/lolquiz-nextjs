@@ -22,7 +22,7 @@ export default function Table() {
                 </thead>
                 <tbody id="champions">
                     {champions.map((champion: any) => (
-                        <Champion {...champion} />
+                        <Champion key={champion.name} {...champion} />
                     ))}
                 </tbody>
             </table>
