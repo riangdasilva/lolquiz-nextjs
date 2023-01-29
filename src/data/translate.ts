@@ -1,0 +1,23 @@
+export const translatedNames: Record<string, string> = {
+    "Aurelion Sol": "AurelionSol",
+    "Renata Glasc": "Renata",
+    "Miss Fortune": "MissFortune",
+    "Master Yi": "MasterYi",
+    "Lee Sin": "LeeSin",
+    "K'Sante": "KSante",
+    "Nunu & Willump": "Nunu",
+    "Kai'Sa": "Kaisa",
+    "Kha'Zix": "Khazix",
+    "Rek'Sai": "RekSai",
+    "Bel'Veth": "Beltveth",
+    "Tahm Kench": "TahmKench",
+    "Twisted Fate": "TwistedFate",
+    "Wukong": "MonkeyKing",
+    "Xin Zhao": "XinZhao",
+    "LeBlanc": "Leblanc",
+    "Vel'Koz": "Velkoz",
+    "Cho'Gath": "Chogath",
+    "Dr. Mundo": "DrMundo",
+    "Jarvan IV": "JarvanIV",
+    "Kog'Maw": "KogMaw"
+}
