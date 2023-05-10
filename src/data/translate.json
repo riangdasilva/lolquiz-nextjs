@@ -1,4 +1,4 @@
-export const translatedNames: Record<string, string> = {
+{
     "Aurelion Sol": "AurelionSol",
     "Renata Glasc": "Renata",
     "Miss Fortune": "MissFortune",

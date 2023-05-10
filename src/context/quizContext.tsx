@@ -2,7 +2,7 @@ import { createContext, useContext, useReducer } from 'react';
 import { ChampionType, QuizState } from '../types/quizTypes';
 import championsList from '../data/champions.json'
 
-const STAGES = ["START", "PLAYING", "END"]
+const STAGES = ["MENU", "GAME", "WINNER"]
 
 const initialState: QuizState = {
     stage: STAGES[0],

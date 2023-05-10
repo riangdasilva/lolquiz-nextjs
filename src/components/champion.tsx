@@ -1,5 +1,5 @@
 import { ChampionType } from "@/types/quizTypes"
-import { translatedNames } from "@/data/translate"
+import { getChampionIcon } from "@/lib/utils";
 import { useQuizContext } from "@/context/quizContext"
 import Table from "./table";
 
@@ -7,13 +7,6 @@ const BASE_URL: string = "https://ddragon.leagueoflegends.com/cdn/13.1.1/img/cha
 
 export default function Champion(champion: any) {
     const [quizState, dispatch]: any = useQuizContext();
-
-    function getChampionImage(name: string): string {
-        if (translatedNames.hasOwnProperty(name)) {
-            name = translatedNames[name]
-        }
-        return `${BASE_URL + name}.png`
-    }
 
     function getClassName(key: string): string {
         let className: string = "w-full aspect-square mx-auto flex flex-row justify-center items-center"
@@ -44,7 +37,7 @@ export default function Champion(champion: any) {
 
     return (
         <tr>
-            <td><div className="w-full aspect-square bg-slate-900 mx-auto flex flex-row justify-center items-center"><img src={getChampionImage(champion.name)} alt={champion.name} /></div></td>
+            <td><div className="w-full aspect-square bg-slate-900 mx-auto flex flex-row justify-center items-center"><img src={getChampionIcon(champion.name)} alt={champion.name} /></div></td>
             <td><div className={getClassName("gender")}><p className="text-center">{champion.gender}</p></div></td>
             <td><div className={getClassName("position")}><p className="text-center">{champion.position.join(", ")}</p></div></td>
             <td><div className={getClassName("species")}><p className="text-center">{champion.species.join(", ")}</p></div></td>

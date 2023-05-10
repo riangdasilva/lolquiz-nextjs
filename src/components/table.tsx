@@ -6,7 +6,7 @@ export default function Table() {
     const [quizState, dispatch]: any = useQuizContext();
     const champions = quizState.guesses
     return (
-        <div className="overflow-x-auto overflow-y-hidden">
+        <div className="overflow-x-auto overflow-y-hidden max-w-4xl">
             <table className="w-full table-fixed border-separate border-spacing-2">
                 <thead>
                     <tr>
